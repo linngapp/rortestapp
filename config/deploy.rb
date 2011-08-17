@@ -3,7 +3,7 @@ $:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 require "rvm/capistrano"
 default_run_options[:pty] = true
 
-set :rvm_ruby_string 'ree-1.8.7'
+set :rvm_ruby_string, 'ree-1.8.7'
 
 require 'capistrano-deploy'
 use_recipes :git, :rails, :bundle, :unicorn
